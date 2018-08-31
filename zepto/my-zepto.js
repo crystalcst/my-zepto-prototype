@@ -2,7 +2,7 @@
     var zepto = {};
 
     function Z (dom, selector) { // 构造函数
-        var i, len = dom.length? dom.length : 0;
+        var i, len = dom? dom.length : 0;
         for (i = 0; i < len; i++) { // 初始化时候挂载到每个实例上
             this[i] = dom[i];
         }
